@@ -20,7 +20,9 @@
             "tsConfig": "projects/zxing-scanner-demo/tsconfig.app.json",
             "assets": [
               "projects/zxing-scanner-demo/src/favicon.ico",
-              "projects/zxing-scanner-demo/src/assets"
+              "projects/zxing-scanner-demo/src/assets",
+              "projects/zxing-scanner-demo/src/browserconfig.xml",
+              "projects/zxing-scanner-demo/src/manifest.webmanifest"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
@@ -51,7 +53,9 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "projects/zxing-scanner-demo/ngsw-config.json"
             }
           }
         },
@@ -86,7 +90,9 @@
             "scripts": [],
             "assets": [
               "projects/zxing-scanner-demo/src/favicon.ico",
-              "projects/zxing-scanner-demo/src/assets"
+              "projects/zxing-scanner-demo/src/assets",
+              "projects/zxing-scanner-demo/src/browserconfig.xml",
+              "projects/zxing-scanner-demo/src/manifest.webmanifest"
             ]
           }
         },
@@ -97,6 +103,34 @@
               "projects/zxing-scanner-demo/tsconfig.app.json",
               "projects/zxing-scanner-demo/tsconfig.spec.json"
             ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "zxing-scanner-demo-e2e": {
+      "root": "projects/zxing-scanner-demo-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/zxing-scanner-demo-e2e/protractor.conf.js",
+            "devServerTarget": "zxing-scanner-demo:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "zxing-scanner-demo:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/zxing-scanner-demo-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]
