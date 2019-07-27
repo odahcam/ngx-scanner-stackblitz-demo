@@ -22,6 +22,7 @@
               "projects/zxing-scanner-demo/src/favicon.ico",
               "projects/zxing-scanner-demo/src/assets",
               "projects/zxing-scanner-demo/src/browserconfig.xml",
+              "projects/zxing-scanner-demo/src/manifest.webmanifest",
               "projects/zxing-scanner-demo/src/manifest.webmanifest"
             ],
             "styles": [
@@ -92,6 +93,7 @@
               "projects/zxing-scanner-demo/src/favicon.ico",
               "projects/zxing-scanner-demo/src/assets",
               "projects/zxing-scanner-demo/src/browserconfig.xml",
+              "projects/zxing-scanner-demo/src/manifest.webmanifest",
               "projects/zxing-scanner-demo/src/manifest.webmanifest"
             ]
           }
