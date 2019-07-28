@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "zxing-scanner-demo": {
-      "root": "projects/zxing-scanner-demo/",
+      "root": "",
       "sourceRoot": "projects/zxing-scanner-demo/src",
       "projectType": "application",
       "prefix": "app",
